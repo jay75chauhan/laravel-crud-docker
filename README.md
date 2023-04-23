@@ -15,6 +15,18 @@ composer global require laravel/installer
 
 php artisan serve
 
+## add Model
+
+php artisan make:model Player -m
+
+## inside db
+
+docker exec -it laraveldb psql -U postgres
+
+## created table
+
+docker exec -it image php artisan migrate
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
